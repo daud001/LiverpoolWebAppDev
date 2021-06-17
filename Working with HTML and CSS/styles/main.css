@@ -1,0 +1,337 @@
+/* the margin and padding for all elements are set to 0*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* margins set for header and main section */
+header, main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 0.5%;
+}
+
+/* font-family set, width, box, padding all set to absolute values
+    margin is set to auto and alight-items is set to center - this
+    moves everything to the center */
+body {
+    font-family: courier, serif;
+    width: 98%;
+    max-width: 960px;
+    box-shadow: 5px 5px 5px 5px firebrick;
+    border-radius: 2.5%;
+    margin: auto;
+    align-items: center;
+    background-color: cornsilk;
+}
+
+/* header image(liverpool logo) moved to the left */
+header img {
+    float: left;
+    padding: 12px;
+}
+
+/* used extra large font size, moved the h1 content 250 pixels away from the logo,
+   and 50 pixels away from the top  */
+header h1 {
+    font-size: xxx-large;
+    margin-left:25%;
+    padding-top: 5%;
+}
+
+/*  moved the h2 content 250 pixels away from the logo,
+   and 60 pixels away from the bottom and 20 pixels away from the top  */
+header h2 {
+    margin-left:25%;
+    margin-bottom: 6%;
+    margin-top: 2.5%;
+    font-style: italic;
+}
+
+/* proper distance between the contents for better outlook on the webpage */
+main h3 {
+    padding-top: 2.5%;
+}
+
+/* used a red 5 pixels width header underneath the header */
+header {
+    border-bottom: 5px solid red;
+    margin: 0;
+    padding:0;
+}
+
+/* main width and padding set */
+main {
+    padding-right: 2%;
+    display: flex;
+}
+
+/* elements pushed below all floating elements, font-size to 80%, centered, red border used
+    with linear gradient to give a good effect of red to yellow, width and padding also set*/
+footer {
+    clear: both;
+    font-size: 0.8em;
+    text-align: center;
+    border-top: 5px solid red;
+    background-image: linear-gradient(orange, yellow);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+/* Selects the first letter of a <h2> and sets to 150% font size*/
+h2:first-child::first-letter {
+    font-size: 150%;
+}
+/*
+a:focus, a:hover {
+    color: hotpink;
+}
+*/
+aside {
+    clear: left;
+    padding-top: 1%;
+    flex-basis: 35%;
+    order: 0;
+}
+
+aside nav a {
+    width: 98%;
+}
+
+section {
+    flex-basis: 65%;
+    order: 1;
+}
+
+#nav_list a {
+    border: 2px solid rosybrown;
+    width: 80%;
+    margin-left:1.25em;
+    margin-bottom:1em;
+    display: block;
+    padding: 0.5em 0 0.5em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: firebrick;
+}
+
+#nav_list a:focus, #nav_list a:hover {
+    color: yellow;
+    background-color: orange;
+}
+
+
+
+#nav_bar_header {
+    width: 960px;
+}
+
+#nav_bar_header ul{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    clear: both;
+    background-color: chocolate;
+}
+
+#nav_bar_header li {
+    list-style-type:none;
+    font-size: 20px;
+    border: 0px solid rosybrown;
+    padding: 1em 0 1em 0em;
+    text-align: center;
+    flex-basis: 25%;
+}
+
+#nav_bar_header a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 79px;
+}
+
+.current, #nav_bar_header a:focus, #nav_bar_header a:hover {
+    color: yellow;
+    background-color: orange;
+}
+
+main h2, main h3, main p {
+    padding-bottom: 1em;
+}
+
+main img {
+    float: left;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header img {
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        padding: 0;
+        order: 0;
+    }
+    section img:first-child {
+        width:100%;
+        padding: 2.5%;}
+
+
+    header h2{
+        font-size: 100%;
+        text-align:center;
+        padding: 0;
+        order:1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header h1 {
+        font-size: 180%;
+        text-align:center;
+        padding: 1%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        flex-direction: column;
+    }
+    section {
+        width: 95%;
+        order: 0;
+    }
+    aside, aside nav, aside nav a {
+        width: 95%;
+        order:1;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #nav_list a
+    {
+        padding-left: 0;
+        margin-left: auto;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    .slicknav_menu { background-color: chocolate !important;}
+
+    #nav_bar_header { display: none;
+
+    }
+}
+
+@media screen and (max-width:479px) {
+    body {
+        font-size: 85%;
+    }
+}
+
+figure {
+    float: left;
+    padding-right: 2.5%;
+    width: 30%;
+}
+
+figure figcaption {
+    font-size: 80%;
+    text-align: center;
+}
+main section h3 {
+    clear: both;
+}
+
+
+
+table, th, td {
+    border: 2px solid red;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+}
+
+table {
+    border-collapse: collapse;
+    flex-basis: 65%;
+    order: 1;
+}
+
+td {
+    text-align: center;
+    vertical-align: center;
+    height: 2em;
+}
+
+td:first-child{
+    text-align: right;
+}
+
+th {
+    background-color: yellow;
+    color: darkgoldenrod;
+}
+
+caption {
+    font-size: 150%;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#fname, #lname, #email, #phone {
+    width: 300px;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+form label{
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+    padding-right: 1em;
+}
+
+form input[type="text"] {
+    display: inline-block;
+    text-align: left;
+    float: right;
+}
+
+#email_header, #email_instruction {
+    text-align: left;
+}
+
+#send_email {
+    width: 100px;
+    text-align: center;
+    display: block;
+    margin-left: 175px;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+section h4 {
+    padding-top: .5em;
+    font-weight: normal;
+}

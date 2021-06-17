@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talukder - Lab 5 Contact page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/slicknav.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+    <script src="js/jquery.slicknav.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_bar_header').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/liverpool_logo.jpg" alt="Liverpool FC logo">
+        <h1>Contact Club</h1>
+        <h2>"You'll Never Walk Alone"</h2>
+    </header>
+
+    <nav id= "mobile_menu"> </nav>
+    <nav id= "nav_bar_header">
+            <ul>
+                <li><a href="index.html"> &nbsp;Home&nbsp;&nbsp; </a></li>
+                <li><a href="stadium.html"> Stadium </a></li>
+                <li><a href="tickets.html"> Tickets </a></li>
+                <li><a class="current" href="contact.html"> Contact </a></li>
+            </ul>
+    </nav>
+
+    <main>
+
+        <aside>
+            <nav id= "nav_list">
+                <a href="https://www.liverpoolfc.com/"> Liverpool FC homepage</a>
+                <a href="https://www.twitter.com/LFC"> Liverpool FC Twitter</a>
+                <a href="https://en.wikipedia.org/wiki/Liverpool_F.C."> Liverpool FC Wiki</a>
+                <a href="https://www.premierleague.com/clubs/10/Liverpool/fixtures"> Latest Club Fixtures</a>
+            </nav>
+        </aside>
+
+        <form action="confirm.html" method="get">
+            <h1 id="email_header"> Email Abu Daud </h1>
+            <h3 id="email_instruction"> Please enter the following information: </h3>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" autofocus required><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="^\d{10}$" required placeholder="Please enter your 10 digit phone number"><br><br>
+            <input type="submit" value="Send Email" id="send_email" name="send_email">
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2021 Abu Daud Talukder
+        </p>
+    </footer>
+</body>
+
+
+</html>

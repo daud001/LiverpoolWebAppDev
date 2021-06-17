@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talukder - Lab 5 Tickets page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/slicknav.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+    <script src="js/jquery.slicknav.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_bar_header').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/liverpool_logo.jpg" alt="Liverpool FC logo">
+        <h1>Tickets</h1>
+        <h2>"You'll Never Walk Alone"</h2>
+    </header>
+
+    <nav id= "mobile_menu"> </nav>
+    <nav id= "nav_bar_header">
+            <ul>
+                <li><a href="index.html"> &nbsp;Home&nbsp;&nbsp; </a></li>
+                <li><a href="stadium.html"> Stadium </a></li>
+                <li><a class="current" href="tickets.html"> Tickets </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+    </nav>
+
+    <main>
+<!--        <section>-->
+<!--        </section>-->
+        <aside>
+            <nav id= "nav_list">
+                <a href="https://www.liverpoolfc.com/"> Liverpool FC homepage</a>
+                <a href="https://www.twitter.com/LFC"> Liverpool FC Twitter</a>
+                <a href="https://en.wikipedia.org/wiki/Liverpool_F.C."> Liverpool FC Wiki</a>
+                <a href="https://www.premierleague.com/clubs/10/Liverpool/fixtures"> Latest Club Fixtures</a>
+            </nav>
+        </aside>
+
+        <table>
+            <caption>Ticket pricing list</caption>
+            <thead>
+            <tr>
+                <th scope="col"> Stand </th>
+                <th scope="col"> Adult </th>
+                <th scope="col"> Over 65 </th>
+                <th scope="col"> Junior </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td scope="row"> Main Stand </td>
+                <td> &euro; 59.00 </td>
+                <td> &euro; 44.00 </td>
+                <td> &euro; 9.00  </td>
+            </tr>
+            <tr>
+                <td scope="row"> Sir Kenny Dalglish/Main Stand </td>
+                <td> &euro; 57.00 </td>
+                <td> &euro; 43.00 </td>
+                <td> &euro; 9.00  </td>
+            </tr>
+            <tr>
+                <td scope="row"> Anfield Upper/Main Stand </td>
+                <td> &euro; 55.00 </td>
+                <td> &euro; 41.00 </td>
+                <td> &euro; 9.00  </td>
+            </tr>
+            <tr>
+                <td scope="row"> Anfield Road 1 </td>
+                <td> &euro; 48.00 </td>
+                <td> &euro; 36.00 </td>
+                <td> &euro; 9.00  </td>
+            </tr>
+            <tr>
+                <td scope="row"> Anfield Road 2 </td>
+                <td> &euro; 47.00 </td>
+                <td> &euro; 35.00 </td>
+                <td> &euro; 9.00  </td>
+            </tr>
+            <tr>
+                <td scope="row"> Anfield Road Lower/Main Stand </td>
+                <td> &euro; 46.00 </td>
+                <td> &euro; 34.50 </td>
+                <td> &euro; 9.00  </td>
+            </tr>
+            <tr>
+                <td scope="row"> KOP </td>
+                <td> &euro; 43.00 </td>
+                <td> &euro; 32.00 </td>
+                <td> &euro; 9.00  </td>
+            </tr>
+            <tr>
+                <td scope="row"> Main Stand Upper </td>
+                <td> &euro; 9.00 </td>
+                <td> &euro; 9.00 </td>
+                <td> &euro; 9.00  </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2021 Abu Daud Talukder
+        </p>
+    </footer>
+</body>
+
+
+</html>
